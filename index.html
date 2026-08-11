@@ -50,10 +50,7 @@ botao.addEventListener("click", botaoClicado);
   <p>A música é cantada em formato de brincadeira cumulativa e, embora no Brasil pareça apenas uma sequência de sons divertidos,
        ela utiliza algumas palavras inspiradas no árabe marroquino.</p>
 
-    <button>❤️<span>0function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}</span></button>
+    <button>❤️<span>0</span></button>
 </div> 
 
 <div>
@@ -101,4 +98,13 @@ texto.textContent++;
     
     </main>
 </html>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </body> 
