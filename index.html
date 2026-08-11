@@ -35,6 +35,11 @@ img {
    </head>
 
 <body>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+</script>
+
   <header>
     <h1>A Ram Sam Sam</h1> 
      <p>create by Rebeca Uchoa </p>
@@ -45,7 +50,10 @@ img {
   <p>A música é cantada em formato de brincadeira cumulativa e, embora no Brasil pareça apenas uma sequência de sons divertidos,
        ela utiliza algumas palavras inspiradas no árabe marroquino.</p>
 
-    <button>❤️<span>0</span></button>
+    <button>❤️<span>0function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}</span></button>
 </div> 
 
 <div>
